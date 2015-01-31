@@ -9,5 +9,5 @@
 
 - name: Setup udev rule for usbmon
   copy:
-    content: 'SUBSYSTEM=="usbmon", GROUP="{{ udev_usbmon_group }}", MODE="{{ udev_usbmon_permissions }}"'
+    content: 'SUBSYSTEM=="usbmon", GROUP="{{ udev_usbmon_group }}", MODE="{{ udev_usbmon_permissions }}\n"'
     dest: "/etc/udev/rules.d/99-usbmon.rules"
