@@ -11,6 +11,7 @@ galaxy_info:
     versions:
     - all
   categories:
-  - networking
+  - system
+  - monitoring
   min_ansible_version: 1.3
 dependencies: []
