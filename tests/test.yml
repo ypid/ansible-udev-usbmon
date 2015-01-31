@@ -4,4 +4,4 @@
   remote_user: root
 
   roles:
-    - ypid.udev-usbmon
+    - ansible-udev-usbmon
