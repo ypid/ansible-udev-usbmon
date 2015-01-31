@@ -1,6 +1,6 @@
 ## udev-usbmon
 
-[![Travis CI](http://img.shields.io/travis/ypid/ansible-udev-usbmon.svg?style=flat)](http://travis-ci.org/ypid/ansible-udev-usbmon)
+ [![Travis CI](http://img.shields.io/travis/ypid/ansible-udev-usbmon.svg?style=flat)](http://travis-ci.org/ypid/ansible-udev-usbmon)
 [![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
 [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/2758)
 
@@ -9,11 +9,17 @@ Adds a udev rule for changing the permissions of usbmon devices to allow anyone 
 
 See http://superuser.com/a/861052.
 
-### Installation
+ ### Installation
 
 This role requires at least Ansible `v1.3`. To install it, run:
 
     ansible-galaxy install ypid.udev-usbmon
+
+To install via git, run either:
+
+    git clone https://github.com/ypid/ansible-udev-usbmon ypid.udev-usbmon
+    git submodule add https://github.com/ypid/ansible-udev-usbmon roles/ypid.udev-usbmon
+
 
 
 
@@ -29,11 +35,11 @@ List of default variables available in the inventory:
 
 
 
-### Authors and license
+ ### Authors and license
 
 `udev-usbmon` role was written by:
 
-- [Robin Schneider](https://github.com/ypid) | [e-mail](mailto:ypid@riseup.net)
+* [Robin Schneider](https://github.com/ypid) | [e-mail](mailto:ypid@riseup.net)
 
 License: [AGPLv3](https://tldrlegal.com/license/gnu-affero-general-public-license-v3-%28agpl-3.0%29)
 
