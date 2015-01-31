@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Robin Schneider
+  description: Ansible udev rule change permissions of usbmon devices
+  license: GPLv3
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - networking
+  min_ansible_version: 1.3
+dependencies: []

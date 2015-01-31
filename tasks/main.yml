@@ -1,0 +1,13 @@
+---
+
+- name: Add usbmon group
+  group:
+    name: "{{ item }}"
+    system: yes
+  with_items:
+    - usbmon
+
+- name: Setup udev rule for usbmon
+  copy:
+    content: 'SUBSYSTEM=="usbmon", GROUP="{{ udev_usbmon_group }}", MODE="{{ udev_usbmon_permissions }}"'
+    dest: "/etc/udev/rules.d/99-usbmon.rules"

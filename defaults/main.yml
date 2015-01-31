@@ -1,0 +1,4 @@
+---
+
+udev_usbmon_group: "usbmon"
+udev_usbmon_permissions: "0640"
