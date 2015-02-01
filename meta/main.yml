@@ -11,8 +11,8 @@ galaxy_info:
     versions:
     - all
   categories:
-  - system
-  - monitoring
+    - system
+    - monitoring
   min_ansible_version: 1.3
 dependencies: []
 ansigenome_info:
