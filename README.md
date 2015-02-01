@@ -1,8 +1,8 @@
 ## udev-usbmon
 
 [![Travis CI](http://img.shields.io/travis/ypid/ansible-udev-usbmon.svg?style=flat)](http://travis-ci.org/ypid/ansible-udev-usbmon)
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-ypid.udev–usbmon-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2758)
 [![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
-[Ansible Galaxy](https://galaxy.ansible.com/list#/roles/2758)
 
 
 Ansible udev rule change permissions of usbmon devices
