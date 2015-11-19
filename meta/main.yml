@@ -1,28 +1,28 @@
 ---
 
+dependencies: []
+
 galaxy_info:
-  author: Robin Schneider
-  description: Ansible udev rule change permissions of usbmon devices
+
+  author: 'Robin Schneider'
+  description: 'Simple role to change permissions of usbmon devices via udev.'
+  license: 'AGPL-3.0'
+  min_ansible_version: '1.3'
+
   platforms:
-  - name: Debian
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
-  categories:
+
+    - name: Debian
+      versions:
+        - all
+
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
     - system
     - monitoring
-  min_ansible_version: 1.3
-dependencies: []
-ansigenome_info:
-  github_url: "https://github.com/ypid/ansible-udev-usbmon"
-  git_branch: "master"
-  galaxy_id: "2758"
-
-  travis: True
-
-  synopsis: |
-    Adds a udev rule for changing the permissions of usbmon devices to allow anyone who is in the specified group to use usbmon.
-
-    See http://superuser.com/a/861052.
+    - udev
+    - wireshark
+    - usb
+    - usbmon

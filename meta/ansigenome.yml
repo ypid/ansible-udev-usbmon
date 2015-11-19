@@ -1,0 +1,22 @@
+---
+
+ansigenome_info:
+  github_url: "https://github.com/ypid/ansible-udev-usbmon"
+  git_branch: "master"
+  galaxy_id: "2758"
+
+  travis: True
+
+  license_url: 'https://tldrlegal.com/license/gnu-affero-general-public-license-v3-(agpl-3.0)'
+
+  authors:
+    - name:  'Robin Schneider'
+      url: 'http://ypid.de/'
+      email: 'ypid@riseup.net'
+      twitter: 'ypid'
+      github: 'ypid'
+
+  synopsis: |
+    Adds a udev rule for changing the permissions of usbmon devices to allow anyone who is in the specified group to use usbmon.
+
+    See http://superuser.com/a/861052.
