@@ -1,13 +1,12 @@
 ---
 
-- name: Add usbmon group
+- name: Ensure usbmon system group is present
   group:
-    name: "{{ item }}"
-    system: yes
-  with_items:
-    - usbmon
+    name: 'usbmon'
+    state: 'present'
+    system: True
 
 - name: Setup udev rule for usbmon
-  copy:
-    content: 'SUBSYSTEM=="usbmon", GROUP="{{ udev_usbmon_group }}", MODE="{{ udev_usbmon_permissions }}"\n'
-    dest: "/etc/udev/rules.d/99-usbmon.rules"
+  template:
+    src: 'etc/udev/rules.d/usbmon.rules.j2'
+    dest: '/etc/udev/rules.d/99-usbmon.rules'

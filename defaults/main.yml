@@ -1,4 +1,9 @@
 ---
 
-udev_usbmon_group: "usbmon"
-udev_usbmon_permissions: "0640"
+# System group for all devices created by the ``usbmon`` kernel module (usually :file:`/dev/usbmon[0-9]+`).
+# You will need to add your users to that group in order to have access to this device.
+udev_usbmon_group: 'usbmon'
+
+
+# File permissions for all devices created by the ``usbmon`` kernel module.
+udev_usbmon_permissions: '0640'

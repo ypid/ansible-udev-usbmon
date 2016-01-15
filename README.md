@@ -4,11 +4,10 @@
      instead have a look at the files in the ./meta/ directory. -->
 
 [![Travis CI](http://img.shields.io/travis/ypid/ansible-udev-usbmon.svg?style=flat)](http://travis-ci.org/ypid/ansible-udev-usbmon)
-[![Ansible Galaxy](http://img.shields.io/badge/galaxy-ypid.udev–usbmon-660198.svg?style=flat)](https://galaxy.ansible.com/detail#/role/2758)
-[![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](https://galaxy.ansible.com/detail#/role/2758)
+[![Ansible Galaxy](http://img.shields.io/badge/galaxy-ypid.udev--usbmon-660198.svg?style=flat)](https://galaxy.ansible.com/detail#/role/2758)
+[![Platforms](http://img.shields.io/badge/platforms-debian%20/%20ubuntu-lightgrey.svg?style=flat)](#)
 [![GitHub Tags](https://img.shields.io/github/tag/ypid/ansible-udev-usbmon.svg)](https://github.com/ypid/ansible-udev-usbmon)
 [![GitHub Stars](https://img.shields.io/github/stars/ypid/ansible-udev-usbmon.svg)](https://github.com/ypid/ansible-udev-usbmon)
-
 
 Simple role to change permissions of usbmon devices via udev.
 
@@ -40,8 +39,13 @@ List of default variables available in the inventory:
 ```YAML
 ---
 
-udev_usbmon_group: "usbmon"
-udev_usbmon_permissions: "0640"
+# System group for all devices created by the ``usbmon`` kernel module (usually :file:`/dev/usbmon[0-9]+`).
+# You will need to add your users to that group in order to have access to this device.
+udev_usbmon_group: 'usbmon'
+
+
+# File permissions for all devices created by the ``usbmon`` kernel module.
+udev_usbmon_permissions: '0640'
 ```
 
 
